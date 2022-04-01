@@ -1,0 +1,131 @@
+﻿<Page x:Class="Anapa_Simulator.SquareView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Anapa_Simulator"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="SquareView" Width="700" Height="740">
+
+    <Grid Background="Black">
+        <!--<Border BorderBrush="#FFA6A6A6" BorderThickness="5" HorizontalAlignment="Left" Height="720" VerticalAlignment="Top" Width="700"/>-->
+        <Canvas Width="650" Height="650" Margin="27,32,23,58">
+            <Canvas.Background>
+                <ImageBrush ImageSource="noisesquare_1.jpg"/>
+            </Canvas.Background>
+            <Line x:Name="Phuong_vi_vuong_goc"
+                X1="0" Y1="0" 
+                  X2="650" Y2="0"
+                  StrokeThickness="2">
+                <Line.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0" Opacity="0.5">
+                        <LinearGradientBrush.RelativeTransform>
+                            <TransformGroup>
+                                <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                                <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                                <RotateTransform Angle="90" CenterY="0.5" CenterX="0.5"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </LinearGradientBrush.RelativeTransform>
+                        <GradientStop Color="#FFFF5C00" Offset="0.507"/>
+                        <GradientStop Color="#FF2DA300" Offset="0.501"/>
+                    </LinearGradientBrush>
+                </Line.Stroke>
+
+            </Line>
+            <Line x:Name="d600m"
+                X1="0" Y1="50" 
+                  X2="650" Y2="50"
+                  StrokeThickness="1" Stroke="#FF335728">
+            </Line>
+            <Line x:Name="d500m"
+                X1="0" Y1="150" 
+                  X2="650" Y2="150"
+                  StrokeThickness="1" Stroke="#FF335728">
+            </Line>
+            <Line x:Name="d400m"
+                X1="0" Y1="250" 
+                  X2="650" Y2="250"
+                  StrokeThickness="1" Stroke="#FF335728">
+            </Line>
+            <Line x:Name="d300m"
+                X1="0" Y1="350" 
+                  X2="650" Y2="350"
+                  StrokeThickness="1" Stroke="#FF335728">
+            </Line>
+            <Line x:Name="d200m"
+                X1="0" Y1="450" 
+                  X2="650" Y2="450"
+                  StrokeThickness="1" Stroke="#FF335728">
+            </Line>
+            <Line x:Name="d10m"
+                X1="0" Y1="550" 
+                  X2="650" Y2="550"
+                  StrokeThickness="1" Stroke="#FF335728">
+            </Line>
+            <Line x:Name="Phuong_vi_vuong_goc_duoi"
+                X1="0" Y1="650" 
+                  X2="650" Y2="650"
+                  StrokeThickness="2" Stroke="#FF038625">
+            </Line>
+            <Line x:Name="cu_ly_vuong_goc"
+                  X1="0" Y1="0"
+                  X2="0" Y2="650"
+                  StrokeThickness="2">
+                <Line.Stroke>
+                    <SolidColorBrush Color="#FFFF5C00" Opacity="0.5"/>
+                </Line.Stroke>
+            </Line>
+            <Line x:Name="cu_ly_vuong_goc_phai"
+                  X1="650" Y1="0"
+                  X2="650" Y2="650"
+                  StrokeThickness="2">
+                <Line.Stroke>
+                    <SolidColorBrush Color="#FFFF5C00" Opacity="0.5"/>
+                </Line.Stroke>
+            </Line>
+            <Line x:Name="m90_degree"
+                  X1="162.5" Y1="0"
+                  X2="162.5" Y2="650"
+                  StrokeThickness="2">
+                <Line.Stroke>
+                    <SolidColorBrush Color="#FF335728" Opacity="0.5"/>
+                </Line.Stroke>
+            </Line>
+            <Line x:Name="p90_degree"
+                  X1="487.5" Y1="0"
+                  X2="487.5" Y2="650"
+                  StrokeThickness="2">
+                <Line.Stroke>
+                    <SolidColorBrush Color="#FF335728" Opacity="0.5"/>
+                </Line.Stroke>
+            </Line>
+            <Line x:Name="zero_degree"
+                  X1="325" Y1="0"
+                  X2="325" Y2="650"
+                  StrokeThickness="2">
+                <Line.Stroke>
+                    <SolidColorBrush Color="#FF335728" Opacity="0.5"/>
+                </Line.Stroke>
+            </Line>
+            <TextBlock x:Name="r600square" TextWrapping="Wrap" Text="600" Canvas.Top="44" Foreground="White" FontFamily="Helvetica" Canvas.Left="-24"/>
+            <TextBlock x:Name="r500square" TextWrapping="Wrap" Text="500" Canvas.Top="143" Foreground="White" FontFamily="Helvetica" Canvas.Left="-23"/>
+            <TextBlock x:Name="r400square" TextWrapping="Wrap" Text="400" Canvas.Top="243" Foreground="White" FontFamily="Helvetica" Canvas.Left="-23"/>
+            <TextBlock x:Name="r300square" TextWrapping="Wrap" Text="300" Canvas.Top="343" Foreground="White" FontFamily="Helvetica" Canvas.Left="-24"/>
+            <TextBlock x:Name="r200square" TextWrapping="Wrap" Text="200" Canvas.Top="443" Foreground="White" FontFamily="Helvetica" Canvas.Left="-24"/>
+            <TextBlock x:Name="r100square" TextWrapping="Wrap" Text="100" Canvas.Top="543" Foreground="White" FontFamily="Helvetica" Canvas.Left="-24"/>
+            <TextBlock x:Name="r0square" TextWrapping="Wrap" Text="0" Canvas.Top="641" Foreground="White" FontFamily="Helvetica" Canvas.Left="-12"/>
+        </Canvas>
+        <TextBlock Margin="342,21,338,699" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="White" Background="Black" Text=" 0º" HorizontalAlignment="Center" FontSize="16" Width="20" FontFamily="Helvetica"/>
+        <TextBlock Margin="167,21,498,699" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="#FF904B2B" Background="Black" Text=" -90º" HorizontalAlignment="Center" FontSize="16" Width="35" FontFamily="Helvetica"/>
+        <TextBlock Margin="502,24,173,696" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="#FF537C00" Background="Black" Text="90º" HorizontalAlignment="Center" FontSize="16" Width="25" FontFamily="Helvetica"/>
+        <TextBlock Margin="7,21,648,699" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="White" Background="Black" Text=" -180º" HorizontalAlignment="Center" FontSize="16" Width="45" FontFamily="Helvetica"/>
+        <TextBlock Margin="652,23,3,697" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="White" Background="Black" Text=" -180º" HorizontalAlignment="Center" FontSize="16" Width="45" FontFamily="Helvetica"/>
+        <TextBlock Margin="175,686,495,39" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="White" Text="270º" HorizontalAlignment="Center" FontSize="14" Width="30" FontFamily="Helvetica" Height="15"/>
+        <TextBlock Margin="12,685,658,40" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="White" Text="180º" HorizontalAlignment="Center" FontSize="14" Width="30" FontFamily="Helvetica" Height="15"/>
+        <TextBlock Margin="344,685,341,40" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="White" Text="0º" HorizontalAlignment="Center" FontSize="14" Width="15" FontFamily="Helvetica" Height="15"/>
+        <TextBlock Margin="504,685,174,40" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="White" Text="90º" HorizontalAlignment="Center" FontSize="14" Width="22" FontFamily="Helvetica" Height="15"/>
+        <TextBlock Margin="660,685,10,40" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="White" Text="180º" HorizontalAlignment="Center" FontSize="14" Width="30" FontFamily="Helvetica" Height="15" RenderTransformOrigin="0.5,0.667"/>
+    </Grid>
+</Page>

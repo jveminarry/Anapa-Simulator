@@ -1,0 +1,28 @@
+﻿<Window x:Class="Anapa_Simulator.LoadScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Anapa_Simulator"
+        mc:Ignorable="d"
+        Title="LoadScreen" Height="362" Width="599" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="LoadScreen.png"/>
+    </Window.Background>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="LoadScreen.png"/>
+        </Grid.Background>
+        <ProgressBar x:Name="loadingbar" HorizontalAlignment="Left" Height="8" Margin="0,355,-0.8,-1.4" VerticalAlignment="Top" Width="600" Background="#FF004E2E" Foreground="#FF19DF66" LargeChange="10" ValueChanged="loadingbar_ValueChanged" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Value="0.1">
+            <ProgressBar.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </ProgressBar.RenderTransform>
+        </ProgressBar>
+
+    </Grid>
+</Window>

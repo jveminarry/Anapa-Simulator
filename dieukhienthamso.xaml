@@ -1,0 +1,72 @@
+﻿<Window x:Name="thamso" x:Class="Anapa_Simulator.dieukhienthamso"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Anapa_Simulator"
+        mc:Ignorable="d"
+        Title="Bảng Cài Đặt Tham Số" Height="262.8" Width="487.9" WindowStartupLocation="CenterScreen" BorderBrush="#FF378335" BorderThickness="5" WindowStyle="None" ResizeMode="NoResize" Icon="Logo_MTA_new.png">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFD2EAD2" Offset="0"/>
+                <GradientStop Color="#FFDCE8D6" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="Д (m)" HorizontalAlignment="Left" Margin="8,38,0,0" VerticalAlignment="Top" FontFamily="Roboto" Foreground="#FF104302"/>
+        <Label Content="КУ (độ)" HorizontalAlignment="Left" Margin="8,61,0,0" VerticalAlignment="Top" FontFamily="Roboto" Foreground="#FF104302"/>
+        <Label Content="П (độ)" HorizontalAlignment="Left" Margin="8,85,0,0" VerticalAlignment="Top" FontFamily="Roboto" Foreground="#FF104302"/>
+        <Label Content="ОСШ" HorizontalAlignment="Left" Margin="8,109,0,0" VerticalAlignment="Top" FontFamily="Roboto" Foreground="#FF104302"/>
+        <Label Content="V (m/с)" HorizontalAlignment="Left" Margin="8,133,0,0" VerticalAlignment="Top" FontFamily="Roboto" Foreground="#FF104302"/>
+        <Label Content="К (độ)" HorizontalAlignment="Left" Margin="8,159,0,0" VerticalAlignment="Top" FontFamily="Roboto" Foreground="#FF104302"/>
+        <Label Content="КЛ" HorizontalAlignment="Left" Margin="8,185,0,0" VerticalAlignment="Top" FontFamily="Roboto" Foreground="#FF104302"/>
+        <Label Content="Ркл" HorizontalAlignment="Left" Margin="8,210,0,0" VerticalAlignment="Top" FontFamily="Roboto" Foreground="#FF104302"/>
+        <TextBox x:Name="t11" HorizontalAlignment="Left" Height="21" Margin="63,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" Foreground="#FF104302" SelectionOpacity="-2" Text="100" TextAlignment="Center"/>
+        <TextBox x:Name="t12" HorizontalAlignment="Left" Height="21" Margin="63,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" Foreground="#FF104302" SelectionOpacity="-2" Text="10" TextAlignment="Center"/>
+        <TextBox x:Name="t13" HorizontalAlignment="Left" Height="21" Margin="63,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" Foreground="#FF104302" SelectionOpacity="-2" Text="0" TextAlignment="Center"/>
+        <TextBox x:Name="t14" HorizontalAlignment="Left" Height="21" Margin="63,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" Foreground="#FF104302" SelectionOpacity="-2" Text="0" TextAlignment="Center"/>
+        <TextBox x:Name="t15" HorizontalAlignment="Left" Height="21" Margin="63,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" Foreground="#FF104302" SelectionOpacity="-2" Text="3" TextAlignment="Center"/>
+        <TextBox x:Name="t16" HorizontalAlignment="Left" Height="21" Margin="63,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" Foreground="#FF104302" SelectionOpacity="-2" Text="200" TextAlignment="Center"/>
+        <TextBox x:Name="t17" HorizontalAlignment="Left" Height="21" Margin="63,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" Foreground="#FF104302" SelectionOpacity="-2" Text="0" TextAlignment="Center"/>
+        <TextBox x:Name="t18" HorizontalAlignment="Left" Height="21" Margin="63,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" Foreground="#FF104302" SelectionOpacity="-2" Text="0" TextAlignment="Center"/>
+        <TextBox x:Name="t21" HorizontalAlignment="Left" Height="21" Margin="108,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="41" Foreground="#FF104302" SelectionOpacity="-2" Text="200" TextAlignment="Center"/>
+        <TextBox x:Name="t22" HorizontalAlignment="Left" Height="21" Margin="108,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="41" Foreground="#FF104302" SelectionOpacity="-2" Text="115" TextAlignment="Center"/>
+        <TextBox x:Name="t23" HorizontalAlignment="Left" Height="21" Margin="108,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="41" Foreground="#FF104302" SelectionOpacity="-2" Text="0" TextAlignment="Center"/>
+        <TextBox x:Name="t24" HorizontalAlignment="Left" Height="21" Margin="108,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="41" Foreground="#FF104302" SelectionOpacity="-2" Text="0" TextAlignment="Center"/>
+        <TextBox x:Name="t25" HorizontalAlignment="Left" Height="21" Margin="108,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="41" Foreground="#FF104302" SelectionOpacity="-2" Text="4" TextAlignment="Center"/>
+        <TextBox x:Name="t26" HorizontalAlignment="Left" Height="21" Margin="108,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="41" Foreground="#FF104302" SelectionOpacity="-2" Text="340" TextAlignment="Center"/>
+        <TextBox x:Name="t27" HorizontalAlignment="Left" Height="21" Margin="108,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="41" Foreground="#FF104302" SelectionOpacity="-2" Text="0" TextAlignment="Center"/>
+        <TextBox x:Name="t28" HorizontalAlignment="Left" Height="21" Margin="108,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="41" Foreground="#FF104302" SelectionOpacity="-2" Text="0" TextAlignment="Center"/>
+        <TextBox x:Name="t31" HorizontalAlignment="Left" Height="21" Margin="152,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" Foreground="#FF104302" SelectionOpacity="-2" Text="300" TextAlignment="Center"/>
+        <TextBox x:Name="t32" HorizontalAlignment="Left" Height="21" Margin="152,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" Foreground="#FF104302" SelectionOpacity="-2" Text="200" TextAlignment="Center"/>
+        <TextBox x:Name="t33" HorizontalAlignment="Left" Height="21" Margin="152,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" Foreground="#FF104302" SelectionOpacity="-2" Text="0" TextAlignment="Center"/>
+        <TextBox x:Name="t34" HorizontalAlignment="Left" Height="21" Margin="152,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" Foreground="#FF104302" SelectionOpacity="-2" Text="0" TextAlignment="Center"/>
+        <TextBox x:Name="t35" HorizontalAlignment="Left" Height="21" Margin="152,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" Foreground="#FF104302" SelectionOpacity="-2" Text="5" TextAlignment="Center"/>
+        <TextBox x:Name="t36" HorizontalAlignment="Left" Height="21" Margin="152,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" Foreground="#FF104302" SelectionOpacity="-2" Text="30" TextAlignment="Center"/>
+        <TextBox x:Name="t37" HorizontalAlignment="Left" Height="21" Margin="152,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" Foreground="#FF104302" SelectionOpacity="-2" Text="0" TextAlignment="Center"/>
+        <TextBox x:Name="t38" HorizontalAlignment="Left" Height="21" Margin="152,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" Foreground="#FF104302" SelectionOpacity="-2" Text="0" TextAlignment="Center"/>
+        <TextBox x:Name="t41" HorizontalAlignment="Left" Height="21" Margin="197,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" Foreground="#FF104302" SelectionOpacity="-2" Text="400" TextAlignment="Center"/>
+        <TextBox x:Name="t42" HorizontalAlignment="Left" Height="21" Margin="197,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" Foreground="#FF104302" SelectionOpacity="-2" Text="330" TextAlignment="Center"/>
+        <TextBox x:Name="t43" HorizontalAlignment="Left" Height="21" Margin="197,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" Foreground="#FF104302" SelectionOpacity="-2" Text="0" TextAlignment="Center"/>
+        <TextBox x:Name="t44" HorizontalAlignment="Left" Height="21" Margin="197,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" Foreground="#FF104302" SelectionOpacity="-2" Text="0" TextAlignment="Center"/>
+        <TextBox x:Name="t45" HorizontalAlignment="Left" Height="21" Margin="197,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" Foreground="#FF104302" SelectionOpacity="-2" Text="6" TextAlignment="Center"/>
+        <TextBox x:Name="t46" HorizontalAlignment="Left" Height="21" Margin="197,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" Foreground="#FF104302" SelectionOpacity="-2" Text="115" TextAlignment="Center"/>
+        <TextBox x:Name="t47" HorizontalAlignment="Left" Height="21" Margin="197,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" Foreground="#FF104302" SelectionOpacity="-2" Text="0" TextAlignment="Center"/>
+        <TextBox x:Name="t48" HorizontalAlignment="Left" Height="21" Margin="197,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" Foreground="#FF104302" SelectionOpacity="-2" Text="0" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Margin="64,11,0,0" Width="42" TextAlignment="Center" FontWeight="Bold" Foreground="#FF104302"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Margin="108,11,0,0" Width="42" TextAlignment="Center" FontWeight="Bold" Foreground="#FF104302"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="3" VerticalAlignment="Top" Margin="153,11,0,0" Width="42" TextAlignment="Center" FontWeight="Bold" Foreground="#FF104302"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="4" VerticalAlignment="Top" Margin="198,11,0,0" Width="42" TextAlignment="Center" FontWeight="Bold" Foreground="#FF104302"/>
+        <Label Content="Mục tiêu" HorizontalAlignment="Left" Margin="8,7,0,0" VerticalAlignment="Top" FontFamily="Roboto" FontWeight="Bold" Width="56" Foreground="#FF104302"/>
+        <Label Content="Tham số của tàu mang" HorizontalAlignment="Left" Margin="286,7,0,0" VerticalAlignment="Top" FontFamily="Roboto" FontWeight="Bold" Foreground="#FF104302"/>
+        <Label Content="Mục tiêu xuất hiện sau (giây):" HorizontalAlignment="Left" Margin="286,133,0,0" VerticalAlignment="Top" FontFamily="Roboto" FontWeight="Bold" Foreground="#FF104302"/>
+        <Button x:Name="apply" Content="Áp dụng" HorizontalAlignment="Left" Margin="286,201,0,0" VerticalAlignment="Top" Width="79" FontWeight="Bold" FontFamily="Roboto" Foreground="White" Background="#FF378335" BorderBrush="#FFFFFDFD" Height="25" Click="apply_Click"/>
+        <Button x:Name="apply_Copy" Content="Hủy bỏ" HorizontalAlignment="Left" Margin="377,201,0,0" VerticalAlignment="Top" Width="79" FontWeight="Bold" FontFamily="Roboto" Foreground="White" Background="#FF378335" BorderBrush="#FFFFFDFD" Height="25" Click="apply_Copy_Click"/>
+        <TextBox x:Name="appear" HorizontalAlignment="Left" Height="21" Margin="343,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" Foreground="#FF104302" Text="1" TextAlignment="Center"/>
+        <Label x:Name="huongmuitau" Content="Hướng mũi tàu:" HorizontalAlignment="Left" Margin="286,38,0,0" VerticalAlignment="Top" FontFamily="Roboto" Foreground="#FF104302"/>
+        <Label Content="Phương vị:" HorizontalAlignment="Left" Margin="286,71,0,0" VerticalAlignment="Top" FontFamily="Roboto" Foreground="#FF104302"/>
+        <TextBox x:Name="htm" HorizontalAlignment="Left" Height="21" Margin="395,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" Foreground="#FF104302" Text="105.675" TextAlignment="Center"/>
+        <TextBox HorizontalAlignment="Left" Height="21" Margin="395,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" Foreground="#FF104302"/>
+
+    </Grid>
+</Window>

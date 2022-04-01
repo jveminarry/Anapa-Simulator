@@ -1,0 +1,22 @@
+﻿<Window x:Class="Anapa_Simulator.Machine_4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Anapa_Simulator"
+        mc:Ignorable="d"
+        Title="Machine_4" Height="420" Width="1080" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Background="LightGray" Height="450" Width="1090">
+        <Border BorderBrush="#FF3150A5" BorderThickness="60" HorizontalAlignment="Left" Height="420" VerticalAlignment="Top" Width="1080"/>
+        <Ellipse Fill="#FF10A231" HorizontalAlignment="Left" Height="55" Stroke="Black" StrokeThickness="3" VerticalAlignment="Top" Width="55" Margin="140,255,0,0" MouseDown="Ellipse_MouseDown"/>
+        <Label Content="ИЗЛУЧЕНИЕ" Margin="310,100,657,285" FontWeight="Bold" FontSize="16"/>
+        <Label Content="ПГС" Margin="527,100,515,285" FontWeight="Bold" FontSize="16"/>
+        <Label Content="ВКЛ ПР4" Margin="127,220,875,165" FontWeight="Bold" FontSize="16"/>
+        <ToggleButton Content="БКЛ" HorizontalAlignment="Left" Margin="335,255,0,0" VerticalAlignment="Top" Background="Red" BorderThickness="3" FontWeight="Bold" Width="55" Height="55" BorderBrush="Black" Checked="ToggleButton_Checked" Unchecked="ToggleButton_Unchecked"/>
+        <Ellipse x:Name="led_machine_4" Fill="#FF084F18" HorizontalAlignment="Left" Height="55" Stroke="#FF538E40" StrokeThickness="11" VerticalAlignment="Top" Width="55" Margin="140,135,0,0"/>
+        <ToggleButton Content="" HorizontalAlignment="Left" Margin="335,140,0,0" VerticalAlignment="Top" Background="#FF10A231" BorderThickness="3" FontWeight="Bold" Width="55" Height="55" BorderBrush="Black" />
+        <ToggleButton Content="" HorizontalAlignment="Left" Margin="520,140,0,0" VerticalAlignment="Top" BorderThickness="3" FontWeight="Bold" Width="55" Height="55" BorderBrush="Black" Background="#FF10A231" />
+
+    </Grid>
+
+</Window>

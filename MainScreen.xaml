@@ -1,0 +1,41 @@
+﻿<Window x:Class="Anapa_Simulator.MainScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Anapa_Simulator"
+        mc:Ignorable="d"
+        Title="Startscreen" Height="810" Width="1080" BorderBrush="#FFABABAB" BorderThickness="5" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" Icon="Logo_MTA_new.png">
+    <Grid x:Name="StartScreen" Background="#FF0B006F">
+        <Border BorderThickness="5" BorderBrush="#FF05B4CD" Margin="5,20,5,5"/>
+        <Label ToolTip="MÀN HÌNH CHỌN CHẾ ĐỘ LÀM VIỆC" x:Name="Title" Content=" Выберите режим работы" Background="#FF0B006F" Width="415" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FF05B4CD" FontSize="30" Margin="345,0,0,0" FontFamily="Tahoma"/>
+        <TextBlock ToolTip="CHẾ ĐỘ CHIẾN ĐẤU" x:Name="WarMode" HorizontalAlignment="Left" Margin="40,84,0,0" Text="  БОЕВОЙ" TextWrapping="Wrap" VerticalAlignment="Top"  Height="35" Width="985" FontWeight="Bold" FontFamily="Tahoma" FontSize="30" Cursor="Hand" MouseDown="WarMode_MouseDown"/>
+        <TextBlock ToolTip="CHẾ ĐỘ HỌC TẬP - CÔNG TÁC" x:Name="StudyMode" HorizontalAlignment="Left" Margin="40,165,0,0" Text="  УЧЕБНО - ТРЕНИРОВОЧНЫЙ" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="985" FontWeight="Bold" FontFamily="Tahoma" FontSize="30" Cursor="Hand" MouseDown="StudyMode_MouseDown"/>
+        <TextBlock ToolTip="CHẾ ĐỘ HỖ TRỢ" x:Name="SupportMode" HorizontalAlignment="Left" Margin="40,245,0,0" Text="  ВСПОМОГАТЕЛНЫЙ   :" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="985" FontWeight="Bold" FontFamily="Tahoma" FontSize="30" Cursor="Hand" Background="#FF0B006F"/>
+        <TextBlock ToolTip="CHẾ ĐỘ CÔNG NGHỆ" x:Name="TechnologyMode" HorizontalAlignment="Left" Margin="40,440,0,0" Text="  ТЕХНОЛОГИЧЕСКИЙ  :" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="985" FontWeight="Bold" FontFamily="Tahoma" FontSize="30" Cursor="Hand"/>
+        <TextBlock ToolTip="TẮT CHƯƠNG TRÌNH !" x:Name="Close_System" HorizontalAlignment="Left" Margin="40,710,0,0" Text="  ВЫКЛЮЧИТЬ СИСТЕМУ" TextWrapping="Wrap" VerticalAlignment="Top"  Height="35" Width="985" FontWeight="Bold" FontFamily="Tahoma" FontSize="30" MouseDown="Close_System_MouseDown" Cursor="Hand"/>
+        <TextBlock x:Name="Sea_Analysis" ToolTip="TÍNH TOÁN THỦY VĂN" HorizontalAlignment="Left" Margin="420,242,0,0" Text="  Гидрологических расчетов (ГР)" TextWrapping="Wrap" VerticalAlignment="Top" Height="43" Width="620" FontWeight="Bold" FontFamily="Tahoma" FontSize="30" Cursor="Hand"/>
+        <TextBlock x:Name="Analysis_Storage" ToolTip="LÝ LỊCH THIẾT BỊ" HorizontalAlignment="Left" Margin="420,288,0,0" Text="  Архивация формуляров ГАС" TextWrapping="Wrap" VerticalAlignment="Top" Height="43" Width="620" FontWeight="Bold" FontFamily="Tahoma" FontSize="30" Cursor="Hand"/>
+        <TextBlock x:Name="Diagnostic_Data" ToolTip="XEM NGÂN HÀNG DỮ LIỆU" HorizontalAlignment="Left" Margin="420,336,0,0" Text="  Просмотр архива диагностики" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="620" FontWeight="Bold" FontFamily="Tahoma" FontSize="30" Cursor="Hand"/>
+        <TextBlock x:Name="OveralCheck" ToolTip="CHẾ ĐỘ KIỂM TRA VÀ CHUẨN ĐOÁN" HorizontalAlignment="Left" Margin="420,440,0,0" Text="  Режим контроля и диагностики" TextWrapping="Wrap" VerticalAlignment="Top" Height="49" Width="620" FontWeight="Bold" FontFamily="Tahoma" FontSize="30" Cursor="Hand"/>
+        <TextBlock x:Name="APO_Check" ToolTip="KIỂM TRA THIẾT BỊ XỬ LÝ SƠ CẤP" HorizontalAlignment="Left" Margin="420,485,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="620" FontWeight="Bold" FontFamily="Tahoma" FontSize="30" Cursor="Hand"><Run Text="  "/><Run Text="Контроль АПО"/></TextBlock>
+        <TextBlock x:Name="Noise_Check" ToolTip="KIỂM TRA TIẾNG ỒN THỦY ÂM" HorizontalAlignment="Left" Margin="420,532,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="43" Width="620" FontWeight="Bold" FontFamily="Tahoma" FontSize="30" Cursor="Hand"><Run Text="  "/><Run Text="Контроль Шумов"/></TextBlock>
+        <TextBlock x:Name="Machine1_Check" ToolTip="KIỂM TRA CÁC CẢM BIẾN VỊ TRÍ MÁY 1" HorizontalAlignment="Left" Margin="420,580,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="46" Width="620" FontWeight="Bold" FontFamily="Tahoma" FontSize="30" Cursor="Hand"><Run Text="  "/><Run Text="Контроль Датчиков положениия пр.1 "/></TextBlock>
+        <TextBlock x:Name="DateTime_Setting" ToolTip="THAY ĐỔI NGÀY THÁNG VÀ THỜI GIAN" HorizontalAlignment="Left" Margin="420,645,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="46" Width="620" FontWeight="Bold" FontFamily="Tahoma" FontSize="30" Cursor="Hand"><Run Text="  Изменить "/><Run Text="Д"/><Run Text="ату и Время"/></TextBlock>
+
+        <Grid.Resources>
+            <Style TargetType="{x:Type TextBlock}">
+                <Setter Property="Background" Value="#FF0B006F"/>
+                <Setter Property="Foreground" Value="#FF05B4CD"/>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background" Value="#FFA50000"/>
+                        <Setter Property="Foreground" Value="White"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+        </Grid.Resources>
+
+
+    </Grid>
+</Window>
